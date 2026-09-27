@@ -8,6 +8,8 @@ public class GenericArrayAlg {
 	 *         null or empty 
 	 */
 	public static <T extends Comparable> Pair<T> minmax(T[] a) {
+		// this will also work; if uncommented and above line commented
+	//public static <T extends Comparable<? super T>> Pair<T> minmax(T[] a) {
 		if (a == null || a.length == 0)
 			return null;
 
