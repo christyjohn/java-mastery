@@ -20,16 +20,32 @@ if not defined PROJECT (
     exit /b 1
 )
 
+REM ============================================================
+REM Project directories
+REM ============================================================
+
+set "SOURCE_ROOT=%PROJECT%\src\main\java"
 set "OUTPUT=%PROJECT%\target\classes"
 
 echo.
 echo ========================================
 echo Java Runner
 echo ========================================
-echo Source : %SOURCE%
-echo Project: %PROJECT%
-echo Output : %OUTPUT%
+echo Source     : %SOURCE%
+echo Project    : %PROJECT%
+echo Source Root: %SOURCE_ROOT%
+echo Output     : %OUTPUT%
 echo.
+
+REM ============================================================
+REM Validate source root
+REM ============================================================
+
+if not exist "%SOURCE_ROOT%" (
+    echo ERROR: Source root does not exist:
+    echo %SOURCE_ROOT%
+    exit /b 1
+)
 
 REM ============================================================
 REM Compile
@@ -40,7 +56,7 @@ echo.
 
 if not exist "%OUTPUT%" mkdir "%OUTPUT%"
 
-javac -d "%OUTPUT%" "%SOURCE%"
+javac -d "%OUTPUT%" -sourcepath "%SOURCE_ROOT%" "%SOURCE%"
 
 if errorlevel 1 (
     echo.
