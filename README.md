@@ -142,4 +142,29 @@ The repository follows a practice-oriented learning approach:
 3. Write additional experiments to investigate edge cases and internal mechanics.
 4. Solve related exercises independently before referring to solutions.
 5. Add unit tests where they help verify correctness or clarify expected behavior.
-   6
+6. Refactor code and document important observations.
+7. Commit meaningful changes to GitHub to maintain a history of progress.
+
+Where possible, examples will be written and tested independently instead of relying exclusively on copying or executing code from external resources.
+
+## Goals for the Long Term
+
+This repository is intended to become a dependable personal reference for:
+
+- Core Java and advanced language features.
+- JVM architecture, memory management, and garbage collection.
+- Multithreading and concurrency.
+- Collections, generics, and functional programming.
+- Data structures, algorithms, and technical interview preparation.
+- Design patterns, testing, and software engineering practices.
+- Further exploration of Java technologies as learning progresses.
+
+## Attribution and Disclaimer
+
+This is an independent educational repository. References to books, courses, instructors, and other learning materials acknowledge the sources that inform the learning process. Their inclusion does not imply endorsement or affiliation.
+
+Copyright in original source material remains with its respective authors and publishers. Where examples are adapted from external resources, attribution will be provided when practical, and substantial reproduced material will be avoided.
+
+---
+
+**Learning by understanding, experimenting, implementing, and testing — one concept at a time.**
