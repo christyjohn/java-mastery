@@ -84,8 +84,8 @@ java-mastery/
     │               ├── ch02_oop/
     │               ├── ch03_strings_arrays/
     │               ├── ch04_exceptions/
-    │               ├── ch05_collections/
-    │               ├── ch06_generics/
+    │               ├── ch05_generics/
+    │               ├── ch06_collections/
     │               ├── ch07_functional/
     │               ├── ch08_io_nio/
     │               ├── ch09_jvm/
