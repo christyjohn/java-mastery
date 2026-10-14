@@ -12,11 +12,11 @@ public class Employee {
 
     public Employee(String name, String jobTitle, double salary, int year, int month, int day) {
         // tough love - throws NullPointerException
-        this.name = Objects.requireNonNull(name, "Unknown");
+        //this.name = Objects.requireNonNull(name, "Unknown");
         //this.jobTitle = Objects.requireNonNull(jobTitle, "Intruder");
 
         // accepts with default
-        //this.name = Objects.requireNonNullElse(name, "Unknown");
+        this.name = Objects.requireNonNullElse(name, "Unknown");
         this.jobTitle = Objects.requireNonNullElse(jobTitle, "Intruder");
         this.salary = salary;
         hireDay = LocalDate.of(year, month, day);
